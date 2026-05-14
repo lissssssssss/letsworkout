@@ -1,0 +1,70 @@
+name: LetsWorkout
+options:
+  bundleIdPrefix: com.letsworkout
+  deploymentTarget:
+    iOS: "16.0"
+  xcodeVersion: "14.0"
+  generateEmptyDirectories: true
+
+settings:
+  base:
+    SWIFT_VERSION: "5.7"
+    TARGETED_DEVICE_FAMILY: "1"
+    IPHONEOS_DEPLOYMENT_TARGET: "16.0"
+
+targets:
+  LetsWorkout:
+    type: application
+    platform: iOS
+    sources:
+      - path: LetsWorkout
+      - path: Shared
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.letsworkout.app
+        INFOPLIST_FILE: LetsWorkout/App/Info.plist
+        CODE_SIGN_ENTITLEMENTS: LetsWorkout/LetsWorkout.entitlements
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+    entitlements:
+      path: LetsWorkout/LetsWorkout.entitlements
+      properties:
+        com.apple.security.application-groups:
+          - group.com.letsworkout.shared
+    info:
+      path: LetsWorkout/App/Info.plist
+      properties:
+        UIBackgroundModes:
+          - audio
+        NSCameraUsageDescription: "需要使用摄像头采集您的运动姿态进行动作比对"
+        UILaunchStoryboardName: ""
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: false
+          UISceneConfigurations:
+            UIWindowSceneSessionRoleApplication:
+              - UISceneConfigurationName: "Default Configuration"
+                UISceneDelegateClassName: "$(PRODUCT_MODULE_NAME).SceneDelegate"
+    dependencies:
+      - target: BroadcastExtension
+
+  BroadcastExtension:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: BroadcastExtension
+      - path: Shared
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.letsworkout.app.broadcast
+        INFOPLIST_FILE: BroadcastExtension/Info.plist
+        CODE_SIGN_ENTITLEMENTS: BroadcastExtension/BroadcastExtension.entitlements
+    entitlements:
+      path: BroadcastExtension/BroadcastExtension.entitlements
+      properties:
+        com.apple.security.application-groups:
+          - group.com.letsworkout.shared
+    info:
+      path: BroadcastExtension/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.broadcast-services-upload
+          NSExtensionPrincipalClass: "$(PRODUCT_MODULE_NAME).SampleHandler"

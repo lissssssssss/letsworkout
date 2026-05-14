@@ -1,0 +1,690 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		018FDB4D911232B91563D9C6 /* JointAngleCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6D8B6AFA5626548FCD859F /* JointAngleCalculator.swift */; };
+		08F3E796E5B15B296DB62385 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A856E1EA7B3ECD3B74B6DA /* Constants.swift */; };
+		0D7526AD63EE4F13DF2628EF /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB8BB548916730F8A152A4E /* HistoryView.swift */; };
+		117C5F5E3FBA3111930A9504 /* VideoPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B46350C066E0004CE6AFD30 /* VideoPickerView.swift */; };
+		1816F8946AB57F36FE95CE8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248A43E2162E6D368EE4772B /* AppDelegate.swift */; };
+		184A48B6ECFD8ED3F8DC4D08 /* IPCProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D350F2EEB5EB3C3A9C117118 /* IPCProtocol.swift */; };
+		1B9BCCE0202DF5BD140F7B0C /* DeviceCapability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23ED8A73DFF37BCC2351B2A4 /* DeviceCapability.swift */; };
+		26CDF30FFC579D0E80FCFA60 /* ScoreGaugeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A018B1CEE11930199BB261D4 /* ScoreGaugeView.swift */; };
+		2A3C520B896C218FD1FF3FDD /* RingBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DD3552082197C969E0D792 /* RingBuffer.swift */; };
+		2B5D62E66BB46FF99116AAE8 /* WorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974554A80077B2FACCF015EC /* WorkoutView.swift */; };
+		2D1B2DE02C9271974769BF13 /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CA4762C25A829F9A345A9B /* CameraManager.swift */; };
+		3611DF32C70EAEB6929BCFD8 /* LetsWorkoutApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C6374EAAA57116D7B43C7E /* LetsWorkoutApp.swift */; };
+		461B0BA5AAFB678639B48EA5 /* VoiceFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD36E85423CBF71AED29D0A /* VoiceFeedback.swift */; };
+		4846E55E4A7D70E2EFD4D946 /* SkeletonNormalizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8F20DB83A10CC4C42FC088 /* SkeletonNormalizer.swift */; };
+		52544D8FEE67833240D882BE /* PiPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BA764E2CB856A65435C380 /* PiPManager.swift */; };
+		5ECE1A2ABDDEED20E9C92E91 /* PoseEstimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355007128C9654D9265A2135 /* PoseEstimator.swift */; };
+		5F6A825DC921121BBA8ADBEA /* ThermalMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF35DCBB7067E1A9DBE1FE39 /* ThermalMonitor.swift */; };
+		66C7160DDB260F175A266CC5 /* SessionCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD4B0E16D03A5FB5E424AEE /* SessionCoordinator.swift */; };
+		6932EAB6B689E27883F61DC4 /* IPCConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC435917D20A92D80D4C5C93 /* IPCConstants.swift */; };
+		783B33FB1629248EADAA68D0 /* RingBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DD3552082197C969E0D792 /* RingBuffer.swift */; };
+		81EF082ADF30A665B43F3592 /* SimulatedCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83660EBE94E39C54581732A6 /* SimulatedCamera.swift */; };
+		8E47641A52A18499229726BE /* PiPRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8170D3A86399EFAB182683A0 /* PiPRenderer.swift */; };
+		91E1C0C3C5B586229788CF4B /* SampleHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957CA45495F4F137024978B6 /* SampleHandler.swift */; };
+		92F9E690D23A3F92B9105782 /* WorkoutSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3259D1C325DDAAEB6FEABAC /* WorkoutSession.swift */; };
+		942A38CF835C6FF3EB58FC8E /* SharedMemoryWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D769D7BCF47C5D732C2C2A82 /* SharedMemoryWriter.swift */; };
+		96D568F3AA91CBAB78A0CC3C /* BroadcastExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 482F13999845814306108270 /* BroadcastExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A1668278C0A42B5DBFAE8527 /* WorkoutRecord.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B6239CF5BB75D86878E30CAD /* WorkoutRecord.xcdatamodeld */; };
+		A3BA30643AA113A8888A4549 /* SimilarityScorer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D568ED9B6BE3371B3266D4C2 /* SimilarityScorer.swift */; };
+		A99D40625F95485E95091432 /* FrameReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E265A50174B2B8326DEA470 /* FrameReceiver.swift */; };
+		AF01474FF4506EA319E67D03 /* FrameScaler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76CC95250BE1DC401D03A75 /* FrameScaler.swift */; };
+		B148C1978A27D09B3CF797B1 /* ScoreOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6825463C162ADF93466A05B1 /* ScoreOverlayView.swift */; };
+		B39DAF27F87B46E1D6ABEAB6 /* DualPoseScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AA3A1EF3C9FE501982D745 /* DualPoseScheduler.swift */; };
+		BDF59C53CC20EE064855FEC5 /* MirrorCorrector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6E921347E07C2F32E5E584 /* MirrorCorrector.swift */; };
+		C1E61D1D90C83B8D3A746E5F /* TemporalFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587F1A646F8A82B23F555C57 /* TemporalFilter.swift */; };
+		CB6870FC66B826EB7AB3969B /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE55F0E5C680E5AA9937621A /* PersistenceController.swift */; };
+		D0119DE23C1EBFE6AF5AE871 /* PoseResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50811AC203E07D0C6A4DB859 /* PoseResult.swift */; };
+		D2DD8E7213647791639565D3 /* CameraFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = C381F1425C8BFC3CD6D5DAA1 /* CameraFrame.swift */; };
+		E0ED097890F96F99877EF1F2 /* VideoFrameReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D190EA574E8785C50876147B /* VideoFrameReader.swift */; };
+		E6C3794F1AE0DC5B600CEB13 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A856E1EA7B3ECD3B74B6DA /* Constants.swift */; };
+		EF2B1034DF7549424FE13D47 /* SharedMemoryReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4348564119F71FEA57BD7174 /* SharedMemoryReader.swift */; };
+		F302D9A83BBFB68C87824893 /* WorkoutStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7500FEAE7B20E5A102E291 /* WorkoutStore.swift */; };
+		FB7A3CA191A9403C2FEE3C6C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1AB11BEE87D5D1D54FF93FE /* HomeView.swift */; };
+		FC899D7ABCFA23B5F2FB748C /* DTWMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83774155564DCE3893BEBF72 /* DTWMatcher.swift */; };
+		FEB2724966DB06ECBD39B667 /* IPCProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D350F2EEB5EB3C3A9C117118 /* IPCProtocol.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AF3B3AD27CF76D3701E5D591 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 433815B94DC283C5D16865A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D33E529F6AC0009E6DFD67C1;
+			remoteInfo = BroadcastExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8CC225F9DEC8973A2A1804BA /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				96D568F3AA91CBAB78A0CC3C /* BroadcastExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		02A856E1EA7B3ECD3B74B6DA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1CD4B0E16D03A5FB5E424AEE /* SessionCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionCoordinator.swift; sourceTree = "<group>"; };
+		23ED8A73DFF37BCC2351B2A4 /* DeviceCapability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceCapability.swift; sourceTree = "<group>"; };
+		248A43E2162E6D368EE4772B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		355007128C9654D9265A2135 /* PoseEstimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseEstimator.swift; sourceTree = "<group>"; };
+		38BA764E2CB856A65435C380 /* PiPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiPManager.swift; sourceTree = "<group>"; };
+		4348564119F71FEA57BD7174 /* SharedMemoryReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedMemoryReader.swift; sourceTree = "<group>"; };
+		482F13999845814306108270 /* BroadcastExtension.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = BroadcastExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		50811AC203E07D0C6A4DB859 /* PoseResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseResult.swift; sourceTree = "<group>"; };
+		55AA3A1EF3C9FE501982D745 /* DualPoseScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DualPoseScheduler.swift; sourceTree = "<group>"; };
+		587F1A646F8A82B23F555C57 /* TemporalFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemporalFilter.swift; sourceTree = "<group>"; };
+		5A6E921347E07C2F32E5E584 /* MirrorCorrector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MirrorCorrector.swift; sourceTree = "<group>"; };
+		5DD36E85423CBF71AED29D0A /* VoiceFeedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceFeedback.swift; sourceTree = "<group>"; };
+		6825463C162ADF93466A05B1 /* ScoreOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreOverlayView.swift; sourceTree = "<group>"; };
+		6B46350C066E0004CE6AFD30 /* VideoPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPickerView.swift; sourceTree = "<group>"; };
+		6D36A0C6556EF54CACBF3DFD /* LetsWorkout.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LetsWorkout.entitlements; sourceTree = "<group>"; };
+		7BB8BB548916730F8A152A4E /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		8170D3A86399EFAB182683A0 /* PiPRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiPRenderer.swift; sourceTree = "<group>"; };
+		83660EBE94E39C54581732A6 /* SimulatedCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulatedCamera.swift; sourceTree = "<group>"; };
+		83774155564DCE3893BEBF72 /* DTWMatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTWMatcher.swift; sourceTree = "<group>"; };
+		8E3AED0D652B3B06743CD92D /* WorkoutRecord.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WorkoutRecord.xcdatamodel; sourceTree = "<group>"; };
+		957CA45495F4F137024978B6 /* SampleHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleHandler.swift; sourceTree = "<group>"; };
+		974554A80077B2FACCF015EC /* WorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutView.swift; sourceTree = "<group>"; };
+		99B086DF35AEA3A90EFED236 /* LetsWorkout.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = LetsWorkout.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C6D8B6AFA5626548FCD859F /* JointAngleCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JointAngleCalculator.swift; sourceTree = "<group>"; };
+		9E265A50174B2B8326DEA470 /* FrameReceiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameReceiver.swift; sourceTree = "<group>"; };
+		A018B1CEE11930199BB261D4 /* ScoreGaugeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreGaugeView.swift; sourceTree = "<group>"; };
+		A3259D1C325DDAAEB6FEABAC /* WorkoutSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutSession.swift; sourceTree = "<group>"; };
+		AA3D3720002D8F4138481A42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B1AB11BEE87D5D1D54FF93FE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		B6C6374EAAA57116D7B43C7E /* LetsWorkoutApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetsWorkoutApp.swift; sourceTree = "<group>"; };
+		BF35DCBB7067E1A9DBE1FE39 /* ThermalMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThermalMonitor.swift; sourceTree = "<group>"; };
+		C381F1425C8BFC3CD6D5DAA1 /* CameraFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraFrame.swift; sourceTree = "<group>"; };
+		C3CA4762C25A829F9A345A9B /* CameraManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
+		D190EA574E8785C50876147B /* VideoFrameReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoFrameReader.swift; sourceTree = "<group>"; };
+		D350F2EEB5EB3C3A9C117118 /* IPCProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPCProtocol.swift; sourceTree = "<group>"; };
+		D568ED9B6BE3371B3266D4C2 /* SimilarityScorer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimilarityScorer.swift; sourceTree = "<group>"; };
+		D769D7BCF47C5D732C2C2A82 /* SharedMemoryWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedMemoryWriter.swift; sourceTree = "<group>"; };
+		D8DD3552082197C969E0D792 /* RingBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingBuffer.swift; sourceTree = "<group>"; };
+		E7717E40477B73EF19A5DCE1 /* BroadcastExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BroadcastExtension.entitlements; sourceTree = "<group>"; };
+		EE55F0E5C680E5AA9937621A /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		F08AE46754C9041D1121433D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F76CC95250BE1DC401D03A75 /* FrameScaler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameScaler.swift; sourceTree = "<group>"; };
+		FA8F20DB83A10CC4C42FC088 /* SkeletonNormalizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonNormalizer.swift; sourceTree = "<group>"; };
+		FC435917D20A92D80D4C5C93 /* IPCConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPCConstants.swift; sourceTree = "<group>"; };
+		FF7500FEAE7B20E5A102E291 /* WorkoutStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutStore.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		097C35000EE9C6D91C33C2B1 /* Algorithm */ = {
+			isa = PBXGroup;
+			children = (
+				83774155564DCE3893BEBF72 /* DTWMatcher.swift */,
+				9C6D8B6AFA5626548FCD859F /* JointAngleCalculator.swift */,
+				5A6E921347E07C2F32E5E584 /* MirrorCorrector.swift */,
+				D568ED9B6BE3371B3266D4C2 /* SimilarityScorer.swift */,
+				FA8F20DB83A10CC4C42FC088 /* SkeletonNormalizer.swift */,
+				587F1A646F8A82B23F555C57 /* TemporalFilter.swift */,
+			);
+			path = Algorithm;
+			sourceTree = "<group>";
+		};
+		25A572662EB57EC69E8AF463 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				C381F1425C8BFC3CD6D5DAA1 /* CameraFrame.swift */,
+				C3CA4762C25A829F9A345A9B /* CameraManager.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		26DA482DC7B727181F98DCB0 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A018B1CEE11930199BB261D4 /* ScoreGaugeView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		352F77CD9D32F5578F1AE98D /* Performance */ = {
+			isa = PBXGroup;
+			children = (
+				23ED8A73DFF37BCC2351B2A4 /* DeviceCapability.swift */,
+				BF35DCBB7067E1A9DBE1FE39 /* ThermalMonitor.swift */,
+			);
+			path = Performance;
+			sourceTree = "<group>";
+		};
+		541188A6190D5D51AAA1B90C /* Pose */ = {
+			isa = PBXGroup;
+			children = (
+				55AA3A1EF3C9FE501982D745 /* DualPoseScheduler.swift */,
+				355007128C9654D9265A2135 /* PoseEstimator.swift */,
+				50811AC203E07D0C6A4DB859 /* PoseResult.swift */,
+			);
+			path = Pose;
+			sourceTree = "<group>";
+		};
+		64ED989D62E34324325EB27C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				482F13999845814306108270 /* BroadcastExtension.appex */,
+				99B086DF35AEA3A90EFED236 /* LetsWorkout.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		673560CF008C5D19514EDD1B /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				02A856E1EA7B3ECD3B74B6DA /* Constants.swift */,
+				D350F2EEB5EB3C3A9C117118 /* IPCProtocol.swift */,
+				D8DD3552082197C969E0D792 /* RingBuffer.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		69705A63C1853454B296D94A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				7BB8BB548916730F8A152A4E /* HistoryView.swift */,
+				B1AB11BEE87D5D1D54FF93FE /* HomeView.swift */,
+				6825463C162ADF93466A05B1 /* ScoreOverlayView.swift */,
+				6B46350C066E0004CE6AFD30 /* VideoPickerView.swift */,
+				974554A80077B2FACCF015EC /* WorkoutView.swift */,
+				26DA482DC7B727181F98DCB0 /* Components */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		AD6260D14B2824E99BB12212 = {
+			isa = PBXGroup;
+			children = (
+				DBAF9CEB9DB212DEB9194735 /* BroadcastExtension */,
+				FB7C34DE4AC5EF2E05277D57 /* LetsWorkout */,
+				673560CF008C5D19514EDD1B /* Shared */,
+				64ED989D62E34324325EB27C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BB72EA5CBF1323D23E453643 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				248A43E2162E6D368EE4772B /* AppDelegate.swift */,
+				AA3D3720002D8F4138481A42 /* Info.plist */,
+				B6C6374EAAA57116D7B43C7E /* LetsWorkoutApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		BD731DE124A10DAB9D4BB0CF /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				1CD4B0E16D03A5FB5E424AEE /* SessionCoordinator.swift */,
+				A3259D1C325DDAAEB6FEABAC /* WorkoutSession.swift */,
+			);
+			path = Session;
+			sourceTree = "<group>";
+		};
+		C2DEF6878097F2F2D0CE67AC /* PiP */ = {
+			isa = PBXGroup;
+			children = (
+				38BA764E2CB856A65435C380 /* PiPManager.swift */,
+				8170D3A86399EFAB182683A0 /* PiPRenderer.swift */,
+			);
+			path = PiP;
+			sourceTree = "<group>";
+		};
+		CCE77CBA81B8DB257B93AC05 /* IPC */ = {
+			isa = PBXGroup;
+			children = (
+				9E265A50174B2B8326DEA470 /* FrameReceiver.swift */,
+				FC435917D20A92D80D4C5C93 /* IPCConstants.swift */,
+				4348564119F71FEA57BD7174 /* SharedMemoryReader.swift */,
+			);
+			path = IPC;
+			sourceTree = "<group>";
+		};
+		DB619E5D04455B67F901A559 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				83660EBE94E39C54581732A6 /* SimulatedCamera.swift */,
+				D190EA574E8785C50876147B /* VideoFrameReader.swift */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		DBAF9CEB9DB212DEB9194735 /* BroadcastExtension */ = {
+			isa = PBXGroup;
+			children = (
+				E7717E40477B73EF19A5DCE1 /* BroadcastExtension.entitlements */,
+				F76CC95250BE1DC401D03A75 /* FrameScaler.swift */,
+				F08AE46754C9041D1121433D /* Info.plist */,
+				957CA45495F4F137024978B6 /* SampleHandler.swift */,
+				D769D7BCF47C5D732C2C2A82 /* SharedMemoryWriter.swift */,
+			);
+			path = BroadcastExtension;
+			sourceTree = "<group>";
+		};
+		E15C7FAA7F7BF56DE1412BF3 /* Feedback */ = {
+			isa = PBXGroup;
+			children = (
+				5DD36E85423CBF71AED29D0A /* VoiceFeedback.swift */,
+			);
+			path = Feedback;
+			sourceTree = "<group>";
+		};
+		F74CBC2BACB9251BC4DDD719 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				EE55F0E5C680E5AA9937621A /* PersistenceController.swift */,
+				FF7500FEAE7B20E5A102E291 /* WorkoutStore.swift */,
+				B6239CF5BB75D86878E30CAD /* WorkoutRecord.xcdatamodeld */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		FB7C34DE4AC5EF2E05277D57 /* LetsWorkout */ = {
+			isa = PBXGroup;
+			children = (
+				6D36A0C6556EF54CACBF3DFD /* LetsWorkout.entitlements */,
+				097C35000EE9C6D91C33C2B1 /* Algorithm */,
+				BB72EA5CBF1323D23E453643 /* App */,
+				25A572662EB57EC69E8AF463 /* Camera */,
+				E15C7FAA7F7BF56DE1412BF3 /* Feedback */,
+				CCE77CBA81B8DB257B93AC05 /* IPC */,
+				352F77CD9D32F5578F1AE98D /* Performance */,
+				C2DEF6878097F2F2D0CE67AC /* PiP */,
+				541188A6190D5D51AAA1B90C /* Pose */,
+				BD731DE124A10DAB9D4BB0CF /* Session */,
+				F74CBC2BACB9251BC4DDD719 /* Storage */,
+				69705A63C1853454B296D94A /* UI */,
+				DB619E5D04455B67F901A559 /* Video */,
+			);
+			path = LetsWorkout;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D1C7F6A7E1B5AD224D708169 /* LetsWorkout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C68C426DC9A122AD4A85FB54 /* Build configuration list for PBXNativeTarget "LetsWorkout" */;
+			buildPhases = (
+				EE45D8B2C175BEAC91E5F785 /* Sources */,
+				8CC225F9DEC8973A2A1804BA /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				384984339983B6F1A45B41A5 /* PBXTargetDependency */,
+			);
+			name = LetsWorkout;
+			packageProductDependencies = (
+			);
+			productName = LetsWorkout;
+			productReference = 99B086DF35AEA3A90EFED236 /* LetsWorkout.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D33E529F6AC0009E6DFD67C1 /* BroadcastExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5186E4F0953ACE388C0356A /* Build configuration list for PBXNativeTarget "BroadcastExtension" */;
+			buildPhases = (
+				4AA6518DBFCE37F7F9DC0044 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BroadcastExtension;
+			packageProductDependencies = (
+			);
+			productName = BroadcastExtension;
+			productReference = 482F13999845814306108270 /* BroadcastExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		433815B94DC283C5D16865A8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = BA454CFA61B99C3E441B2DDB /* Build configuration list for PBXProject "LetsWorkout" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = AD6260D14B2824E99BB12212;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 64ED989D62E34324325EB27C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D33E529F6AC0009E6DFD67C1 /* BroadcastExtension */,
+				D1C7F6A7E1B5AD224D708169 /* LetsWorkout */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4AA6518DBFCE37F7F9DC0044 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08F3E796E5B15B296DB62385 /* Constants.swift in Sources */,
+				AF01474FF4506EA319E67D03 /* FrameScaler.swift in Sources */,
+				FEB2724966DB06ECBD39B667 /* IPCProtocol.swift in Sources */,
+				2A3C520B896C218FD1FF3FDD /* RingBuffer.swift in Sources */,
+				91E1C0C3C5B586229788CF4B /* SampleHandler.swift in Sources */,
+				942A38CF835C6FF3EB58FC8E /* SharedMemoryWriter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE45D8B2C175BEAC91E5F785 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1816F8946AB57F36FE95CE8C /* AppDelegate.swift in Sources */,
+				D2DD8E7213647791639565D3 /* CameraFrame.swift in Sources */,
+				2D1B2DE02C9271974769BF13 /* CameraManager.swift in Sources */,
+				E6C3794F1AE0DC5B600CEB13 /* Constants.swift in Sources */,
+				FC899D7ABCFA23B5F2FB748C /* DTWMatcher.swift in Sources */,
+				1B9BCCE0202DF5BD140F7B0C /* DeviceCapability.swift in Sources */,
+				B39DAF27F87B46E1D6ABEAB6 /* DualPoseScheduler.swift in Sources */,
+				A99D40625F95485E95091432 /* FrameReceiver.swift in Sources */,
+				0D7526AD63EE4F13DF2628EF /* HistoryView.swift in Sources */,
+				FB7A3CA191A9403C2FEE3C6C /* HomeView.swift in Sources */,
+				6932EAB6B689E27883F61DC4 /* IPCConstants.swift in Sources */,
+				184A48B6ECFD8ED3F8DC4D08 /* IPCProtocol.swift in Sources */,
+				018FDB4D911232B91563D9C6 /* JointAngleCalculator.swift in Sources */,
+				3611DF32C70EAEB6929BCFD8 /* LetsWorkoutApp.swift in Sources */,
+				BDF59C53CC20EE064855FEC5 /* MirrorCorrector.swift in Sources */,
+				CB6870FC66B826EB7AB3969B /* PersistenceController.swift in Sources */,
+				52544D8FEE67833240D882BE /* PiPManager.swift in Sources */,
+				8E47641A52A18499229726BE /* PiPRenderer.swift in Sources */,
+				5ECE1A2ABDDEED20E9C92E91 /* PoseEstimator.swift in Sources */,
+				D0119DE23C1EBFE6AF5AE871 /* PoseResult.swift in Sources */,
+				783B33FB1629248EADAA68D0 /* RingBuffer.swift in Sources */,
+				26CDF30FFC579D0E80FCFA60 /* ScoreGaugeView.swift in Sources */,
+				B148C1978A27D09B3CF797B1 /* ScoreOverlayView.swift in Sources */,
+				66C7160DDB260F175A266CC5 /* SessionCoordinator.swift in Sources */,
+				EF2B1034DF7549424FE13D47 /* SharedMemoryReader.swift in Sources */,
+				A3BA30643AA113A8888A4549 /* SimilarityScorer.swift in Sources */,
+				81EF082ADF30A665B43F3592 /* SimulatedCamera.swift in Sources */,
+				4846E55E4A7D70E2EFD4D946 /* SkeletonNormalizer.swift in Sources */,
+				C1E61D1D90C83B8D3A746E5F /* TemporalFilter.swift in Sources */,
+				5F6A825DC921121BBA8ADBEA /* ThermalMonitor.swift in Sources */,
+				E0ED097890F96F99877EF1F2 /* VideoFrameReader.swift in Sources */,
+				117C5F5E3FBA3111930A9504 /* VideoPickerView.swift in Sources */,
+				461B0BA5AAFB678639B48EA5 /* VoiceFeedback.swift in Sources */,
+				A1668278C0A42B5DBFAE8527 /* WorkoutRecord.xcdatamodeld in Sources */,
+				92F9E690D23A3F92B9105782 /* WorkoutSession.swift in Sources */,
+				F302D9A83BBFB68C87824893 /* WorkoutStore.swift in Sources */,
+				2B5D62E66BB46FF99116AAE8 /* WorkoutView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		384984339983B6F1A45B41A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D33E529F6AC0009E6DFD67C1 /* BroadcastExtension */;
+			targetProxy = AF3B3AD27CF76D3701E5D591 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0F794EABE5351E4BAD8C7439 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LetsWorkout/LetsWorkout.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = LetsWorkout/App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.letsworkout.app;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1F424B00B0A739E8E844EC46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = BroadcastExtension/BroadcastExtension.entitlements;
+				INFOPLIST_FILE = BroadcastExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.letsworkout.app.broadcast;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2EA632E75BA82AAAD7161423 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LetsWorkout/LetsWorkout.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = LetsWorkout/App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.letsworkout.app;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		549302DA2F4E72729BD5B3EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.7;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A2312FB2C48164ED25B665F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.7;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		CA2D94C3C4B5B6FFFD135490 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = BroadcastExtension/BroadcastExtension.entitlements;
+				INFOPLIST_FILE = BroadcastExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.letsworkout.app.broadcast;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BA454CFA61B99C3E441B2DDB /* Build configuration list for PBXProject "LetsWorkout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				549302DA2F4E72729BD5B3EB /* Debug */,
+				A2312FB2C48164ED25B665F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C68C426DC9A122AD4A85FB54 /* Build configuration list for PBXNativeTarget "LetsWorkout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EA632E75BA82AAAD7161423 /* Debug */,
+				0F794EABE5351E4BAD8C7439 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D5186E4F0953ACE388C0356A /* Build configuration list for PBXNativeTarget "BroadcastExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F424B00B0A739E8E844EC46 /* Debug */,
+				CA2D94C3C4B5B6FFFD135490 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B6239CF5BB75D86878E30CAD /* WorkoutRecord.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8E3AED0D652B3B06743CD92D /* WorkoutRecord.xcdatamodel */,
+			);
+			currentVersion = 8E3AED0D652B3B06743CD92D /* WorkoutRecord.xcdatamodel */;
+			path = WorkoutRecord.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 433815B94DC283C5D16865A8 /* Project object */;
+}
